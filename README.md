@@ -71,9 +71,9 @@ Docker Containers
 
 ![Student management screenshot](screenshots/student-management.png)
 
-![Docker containers screenshot](screenshots/docker-containers.png)
+![Docker containers screenshot](screenshots/docker-containers1.png)
 
-![Database screenshot](screenshots/database.png)
+![Database screenshot](screenshots/Database.png)
 
 ## 📋 Tech Stack
 
