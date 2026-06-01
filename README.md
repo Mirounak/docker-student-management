@@ -28,6 +28,53 @@ Demonstrate how Docker containers simplify deployment, scalability, and environm
 - Modern responsive frontend with Bootstrap 5
 - Cross-origin resource sharing (CORS) configuration
 
+## Project Achievements
+
+- Developed Spring Boot REST API
+- Implemented complete CRUD operations
+- Integrated MySQL database
+- Containerized application with Docker
+- Orchestrated services using Docker Compose
+- Implemented responsive frontend dashboard
+- Configured CORS communication
+- Added exception handling and validation
+- Implemented persistent database storage
+
+## System Architecture
+
+```
+Frontend (HTML/CSS/JS)
+|
+v
+Spring Boot REST API
+|
+v
+MySQL Database
+|
+v
+Docker Containers
+```
+
+## Demonstration Scenario
+
+- User opens dashboard
+- User creates a student
+- Frontend sends POST request
+- Spring Boot processes request
+- MySQL stores data
+- Docker containers manage deployment
+- Student appears in dashboard
+
+## 📸 Screenshots
+
+![Dashboard screenshot](screenshots/dashboard.png)
+
+![Student management screenshot](screenshots/student-management.png)
+
+![Docker containers screenshot](screenshots/docker-containers.png)
+
+![Database screenshot](screenshots/database.png)
+
 ## 📋 Tech Stack
 
 ### Backend
@@ -149,7 +196,7 @@ CREATE TABLE student (
 Base URL: `http://localhost:8080`
 
 | HTTP Method | Endpoint                    | Description              | Status Code |
-|-------------|-----------------------------|--------------------------|----|
+|-------------|-----------------------------|--------------------------|-------------|
 | GET         | `/students`                 | Retrieve all students    | 200 |
 | GET         | `/students/{id}`            | Get student by ID        | 200 |
 | POST        | `/students`                 | Create new student       | 201 |
@@ -404,6 +451,23 @@ docker-compose down -v
 # Rebuild everything
 docker-compose up --build -d
 ```
+
+## Learning Outcomes
+
+The team strengthened practical skills in:
+
+- Object-Oriented Programming
+- Spring Boot
+- REST APIs
+- MySQL integration
+- Docker containerization
+- Docker Compose orchestration
+- Frontend/backend communication
+- Software deployment concepts
+
+## Conclusion
+
+This project demonstrates how Docker streamlines deployment and ensures consistent environments for Java Spring Boot applications by encapsulating the API and database into reproducible containers.
 
 ## 📚 Resources
 
