@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="api-base-url" content="" />
+    <title>Dockerized Student Management System</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- App Shell -->
+    <div class="app-shell">
+      <!-- Top Navigation -->
+      <nav class="navbar navbar-expand-lg navbar-dark app-navbar sticky-top">
+        <div class="container">
+          <a class="navbar-brand d-flex align-items-center gap-2" href="#overview">
+            <img
+              src="assets/docker-mark.svg"
+              alt="Docker"
+              class="brand-logo"
+            />
+            <span>Dockerized Student Management System</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+              <li class="nav-item"><a class="nav-link" href="#project-info">Project</a></li>
+              <li class="nav-item"><a class="nav-link" href="#architecture">Architecture</a></li>
+              <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+              <li class="nav-item"><a class="nav-link" href="#dashboard">Dashboard</a></li>
+              <li class="nav-item"><a class="nav-link" href="#students">Students</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Hero Section -->
+      <section class="hero" id="overview">
+        <div class="hero-ambient"></div>
+        <div class="floating-icons" aria-hidden="true">
+          <span class="floating-icon icon-1"></span>
+          <span class="floating-icon icon-2"></span>
+          <span class="floating-icon icon-3"></span>
+          <span class="floating-icon icon-4"></span>
+        </div>
+        <div class="container position-relative">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7 hero-content reveal">
+              <p class="hero-badge">
+                Ferhat Abbas University Setif 1 (UFAS)
+              </p>
+              <h1 class="display-4 fw-bold">
+                Dockerized Student Management System
+              </h1>
+              <p class="lead text-white-50">
+                A professional OOP project showcasing how Docker containers
+                deploy and manage a Spring Boot student platform connected to
+                MySQL.
+              </p>
+              <div class="hero-meta">
+                <span>Course: Object-Oriented Programming (OOP)</span>
+                <span>Supervisor: Dr. MANSOUR Yasmine</span>
+                <span>Presentation Year: 2026</span>
+              </div>
+              <div class="hero-actions">
+                <a class="btn btn-info btn-lg text-white" href="#dashboard">
+                  View Dashboard
+                </a>
+                <a class="btn btn-outline-light btn-lg" href="#students">
+                  Manage Students
+                </a>
+              </div>
+              <!-- Animated counters -->
+              <div class="hero-stats">
+                <div class="stat-chip">
+                  <p>Endpoints</p>
+                  <h3 class="counter" data-count="5">0</h3>
+                </div>
+                <div class="stat-chip">
+                  <p>Containers</p>
+                  <h3 class="counter" data-count="2">0</h3>
+                </div>
+                <div class="stat-chip">
+                  <p>Team Members</p>
+                  <h3 class="counter" data-count="6">0</h3>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 reveal">
+              <div class="hero-glass">
+                <div class="glass-header">Project Snapshot</div>
+                <div class="glass-body">
+                  <div class="snapshot-item">
+                    <span>Backend</span>
+                    <strong>Java 21 - Spring Boot 3</strong>
+                  </div>
+                  <div class="snapshot-item">
+                    <span>Database</span>
+                    <strong>MySQL</strong>
+                  </div>
+                  <div class="snapshot-item">
+                    <span>Deployment</span>
+                    <strong>Docker & Docker Compose</strong>
+                  </div>
+                  <div class="snapshot-item">
+                    <span>API</span>
+                    <strong>localhost:8080</strong>
+                  </div>
+                </div>
+                <!-- Moving ship animation -->
+                <div class="ship-stage" aria-hidden="true">
+                  <div class="docker-ship">
+                    <div class="ship-cargo">
+                      <span></span><span></span><span></span><span></span>
+                    </div>
+                    <div class="ship-body"></div>
+                    <div class="ship-wave"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Information -->
+      <section class="section" id="project-info">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Project Information</span>
+            <h2>Objective, Technologies & Docker Strategy</h2>
+            <p>
+              This showcase highlights modern containerized deployment patterns
+              for a Spring Boot student management platform.
+            </p>
+          </div>
+          <div class="row g-4">
+            <div class="col-lg-6">
+              <div class="info-card reveal">
+                <h4>Project Objective</h4>
+                <p>
+                  Demonstrate how Docker containers simplify deployment,
+                  scalability, and environment consistency for a Java
+                  Spring Boot application connected to a MySQL database.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="info-card reveal">
+                <h4>Technologies Used</h4>
+                <div class="badge-group">
+                  <span>Java 21</span>
+                  <span>Spring Boot 3</span>
+                  <span>REST API</span>
+                  <span>MySQL</span>
+                  <span>Docker</span>
+                  <span>Docker Compose</span>
+                  <span>Bootstrap 5</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="info-card reveal">
+                <h4>Docker Architecture Overview</h4>
+                <p>
+                  Two lightweight containers operate together: the Spring Boot
+                  service exposes REST endpoints, while a MySQL container
+                  persists student data. Docker Compose orchestrates them.
+                </p>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="info-card reveal">
+                <h4>Why Docker?</h4>
+                <p>
+                  Docker ensures reproducible deployments, quick setup for new
+                  environments, seamless scaling, and reliable isolation of
+                  services during development and presentation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Docker Visualization -->
+      <section class="section section-alt" id="architecture">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Docker Visualization</span>
+            <h2>Container Communication Flow</h2>
+            <p>
+              Animated data flow between the Spring Boot API and the MySQL
+              database containers.
+            </p>
+          </div>
+          <div class="architecture-flow reveal">
+            <div class="container-card api">
+              <div class="container-icon">Spring Boot</div>
+              <h5>Spring Boot Container</h5>
+              <p>Handles REST endpoints and business logic.</p>
+            </div>
+            <div class="flow-lines" aria-hidden="true">
+              <span class="flow-line"></span>
+              <span class="flow-line reverse"></span>
+            </div>
+            <div class="container-card db">
+              <div class="container-icon">MySQL</div>
+              <h5>MySQL Container</h5>
+              <p>Stores and serves student data securely.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Supervisor Section -->
+      <section class="section" id="supervisor">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Supervisor</span>
+            <h2>Academic Guidance</h2>
+          </div>
+          <div class="supervisor-card reveal">
+            <div>
+              <h3>Dr. MANSOUR Yasmine</h3>
+              <p>Supervisor · Ferhat Abbas University Setif 1</p>
+            </div>
+            <span class="supervisor-badge">OOP Course Lead</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Team Section -->
+      <section class="section section-alt" id="team">
+        <div class="container">
+          <div class="section-heading reveal">
+            <span class="section-kicker">Team Members</span>
+            <h2>Project Contributors</h2>
+          </div>
+          <div class="row g-4">
+            <div class="col-md-4">
+              <div class="team-card reveal">
+                <h5>BOUADJADJA Mohammed El Amine</h5>
+                <p>Backend Development, Dockerization and Deployment</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-card reveal">
+                <h5>HEDLI Anes</h5>
+                <p>Frontend Development (HTML, CSS, JavaScript) and Docker Research</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-card reveal">
+                <h5>BECHNA Nidhal</h5>
+                <p>Database Design and Functional Verification</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-card reveal">
+                <h5>ADJAL Abd El Bari</h5>
+                <p>Project Documentation and Report Preparation</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-card reveal">
+                <h5>MAOUCHE Chakib</h5>
+                <p>User Interface Design and User Experience Improvements</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="team-card reveal">
+                <h5>BOUROUINA Souhile</h5>
+                <p>Presentation Materials and Content Organization</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <main class="py-5">
+        <div class="container">
+          <!-- Dashboard Stats -->
+          <section id="dashboard" class="section-sm reveal">
+            <div class="d-flex align-items-center justify-content-between mb-3">
+              <h2 class="section-title">Dashboard</h2>
+              <span class="text-muted small">Live status from backend</span>
+            </div>
+            <div class="row g-3 mb-4">
+              <div class="col-md-3">
+                <div class="stat-card">
+                  <div>
+                    <p class="stat-label">Total Students</p>
+                    <h3 class="stat-value counter" id="totalStudents" data-count="0">0</h3>
+                  </div>
+                  <div class="stat-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" role="img">
+                      <path
+                        d="M12 4 2 9l10 5 8.7-4.35V16h1.3V9L12 4zm0 7.2L5.6 9 12 6.8 18.4 9 12 11.2zm-6 3.7v2.6c0 1.7 2.7 3 6 3s6-1.3 6-3v-2.6l-6 3-6-3z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="stat-card">
+                  <div>
+                    <p class="stat-label">Backend Status</p>
+                    <h3 class="stat-value">
+                      <span id="backendStatus" class="status-pill">Checking</span>
+                    </h3>
+                  </div>
+                  <div class="stat-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" role="img">
+                      <path d="M4 6h16v4H4zm0 6h16v8H4z" />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="stat-card">
+                  <div>
+                    <p class="stat-label">Database</p>
+                    <h3 class="stat-value">
+                      <span id="dbStatus" class="status-pill">Checking</span>
+                    </h3>
+                  </div>
+                  <div class="stat-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" role="img">
+                      <path
+                        d="M12 3c-4.4 0-8 1.3-8 3v12c0 1.7 3.6 3 8 3s8-1.3 8-3V6c0-1.7-3.6-3-8-3zm0 2c3.3 0 6 .7 6 1s-2.7 1-6 1-6-.7-6-1 2.7-1 6-1zm0 5c3.3 0 6-.7 6-1v3c0 .3-2.7 1-6 1s-6-.7-6-1V9c0 .3 2.7 1 6 1zm0 5c3.3 0 6-.7 6-1v3c0 .3-2.7 1-6 1s-6-.7-6-1v-3c0 .3 2.7 1 6 1z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="stat-card">
+                  <div>
+                    <p class="stat-label">Docker Status</p>
+                    <h3 class="stat-value">
+                      <span id="dockerStatus" class="status-pill">Checking</span>
+                    </h3>
+                  </div>
+                  <div class="stat-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" role="img">
+                      <path
+                        d="M3 13c0 4 4 7 9 7 4.8 0 9-2.7 9-7 0-3-2.4-5.5-6-6v2h-2V7h-2v2H9V7H7v3H5v2h2c-.2.3-.3.7-.3 1.1 0 1.2 1.1 2.2 2.5 2.2s2.5-1 2.5-2.2c0-.4-.1-.8-.3-1.1h2.6c-.2.3-.3.7-.3 1.1 0 1.2 1.1 2.2 2.5 2.2s2.5-1 2.5-2.2c0-.4-.1-.8-.3-1.1h2.1C19.6 9.7 17.2 8 14.5 8c-2.6 0-4.2 1.4-5 3-3.8-.1-6.5 1.1-6.5 2z"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Student Management -->
+          <section id="students" class="reveal">
+            <div class="table-card">
+              <div class="table-card-header">
+                <div>
+                  <h3 class="mb-1">Student Directory</h3>
+                  <p class="text-muted mb-0">
+                    Manage student records with real-time API integration.
+                  </p>
+                </div>
+                <button class="btn btn-info text-white" data-bs-toggle="modal" data-bs-target="#addStudentModal">
+                  Add Student
+                </button>
+              </div>
+
+              <!-- Controls -->
+              <div class="table-controls">
+                <div class="search-group">
+                  <span class="search-icon" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" role="img">
+                      <path
+                        d="M10.5 3a7.5 7.5 0 1 0 4.7 13.4l4.4 4.4 1.4-1.4-4.4-4.4A7.5 7.5 0 0 0 10.5 3zm0 2a5.5 5.5 0 1 1 0 11 5.5 5.5 0 0 1 0-11z"
+                      />
+                    </svg>
+                  </span>
+                  <input
+                    type="text"
+                    id="searchInput"
+                    class="form-control"
+                    placeholder="Search by name or email..."
+                  />
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                  <select id="sortField" class="form-select form-select-sm">
+                    <option value="id">Sort by ID</option>
+                    <option value="firstName">Sort by First Name</option>
+                    <option value="lastName">Sort by Last Name</option>
+                    <option value="email">Sort by Email</option>
+                  </select>
+                  <select id="sortOrder" class="form-select form-select-sm">
+                    <option value="asc">Ascending</option>
+                    <option value="desc">Descending</option>
+                  </select>
+                  <select id="pageSize" class="form-select form-select-sm">
+                    <option value="5">5 / page</option>
+                    <option value="10">10 / page</option>
+                    <option value="15">15 / page</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Loading Overlay -->
+              <div id="loadingOverlay" class="loading-overlay d-none">
+                <div class="spinner-border text-info" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+              </div>
+
+              <!-- Table Skeleton -->
+              <div class="table-skeleton d-none" id="tableSkeleton" aria-hidden="true">
+                <div class="skeleton-row"></div>
+                <div class="skeleton-row"></div>
+                <div class="skeleton-row"></div>
+                <div class="skeleton-row"></div>
+                <div class="skeleton-row"></div>
+              </div>
+
+              <!-- Table -->
+              <div class="table-responsive">
+                <table class="table table-modern align-middle mb-0">
+                  <thead>
+                    <tr>
+                      <th scope="col">ID</th>
+                      <th scope="col">First Name</th>
+                      <th scope="col">Last Name</th>
+                      <th scope="col">Email</th>
+                      <th scope="col" class="text-end">Actions</th>
+                    </tr>
+                  </thead>
+                  <tbody id="studentsTableBody"></tbody>
+                </table>
+              </div>
+
+              <!-- Empty State -->
+              <div id="emptyState" class="empty-state d-none">
+                <div class="empty-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" role="img">
+                    <path
+                      d="M4 5c0-1.1.9-2 2-2h10a3 3 0 0 1 3 3v13H7a3 3 0 0 0-3 3V5zm4 13h11V6a1 1 0 0 0-1-1H6v13a3 3 0 0 1 2-1z"
+                    />
+                  </svg>
+                </div>
+                <h5>No students found</h5>
+                <p class="text-muted">
+                  Try adjusting your search or add a new student to get started.
+                </p>
+              </div>
+
+              <!-- Pagination -->
+              <div class="table-footer">
+                <div class="text-muted small" id="paginationInfo">Showing 0 entries</div>
+                <nav>
+                  <ul class="pagination pagination-sm mb-0" id="pagination"></ul>
+                </nav>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-grid">
+            <div>
+              <h6>University</h6>
+              <p>Ferhat Abbas University Setif 1 (UFAS)</p>
+            </div>
+            <div>
+              <h6>Course</h6>
+              <p>Object-Oriented Programming (OOP)</p>
+            </div>
+            <div>
+              <h6>Supervisor</h6>
+              <p>Dr. MANSOUR Yasmine</p>
+            </div>
+            <div>
+              <h6>Team Members</h6>
+              <p>HEDLI Anes | MAOUCHE Chakib | BECHNA Nidhal | ADJAL Abd El Bari | BOUADJADJA Mohammed El Amine | BOUROUINA Souhile</p>
+            </div>
+            <div>
+              <h6>Project Year</h6>
+              <p>2026</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- Add Student Modal -->
+    <div class="modal fade" id="addStudentModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Add New Student</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <form id="addStudentForm">
+            <div class="modal-body">
+              <div class="mb-3">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-control" name="firstName" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control" name="lastName" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" required />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                Cancel
+              </button>
+              <button type="submit" class="btn btn-info text-white">
+                Save Student
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Edit Student Modal -->
+    <div class="modal fade" id="editStudentModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Edit Student</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <form id="editStudentForm">
+            <input type="hidden" name="id" />
+            <div class="modal-body">
+              <div class="mb-3">
+                <label class="form-label">First Name</label>
+                <input type="text" class="form-control" name="firstName" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Last Name</label>
+                <input type="text" class="form-control" name="lastName" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-control" name="email" required />
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+                Cancel
+              </button>
+              <button type="submit" class="btn btn-info text-white">
+                Update Student
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div class="modal fade" id="deleteStudentModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Delete Student</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+          <div class="modal-body">
+            <p class="mb-0" id="deleteStudentMessage"></p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
+              Cancel
+            </button>
+            <button type="button" class="btn btn-danger" id="confirmDeleteButton">
+              Delete
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div class="toast-container position-fixed top-0 end-0 p-3" id="toastContainer"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
